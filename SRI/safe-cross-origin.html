@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Safe SRI</title>
 
-  <!-- Safe CSP to prevent inline scripts and only allow JS from 7ragnarok7.github.io/SRI -->
   <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' https://7ragnarok7.github.io/SRI/; object-src 'none'; base-uri 'none';">
+        content="default-src 'self'; script-src 'self' https://7ragnarok7.github.io; style-src 'self'; object-src 'none'; base-uri 'none';">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-    }
-    button {
-      padding: 8px 16px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <h2>Cross-Domain Script Include Example</h2>
   <p>This page loads an external script from <code>7ragnarok7.github.io/SRI//main.js</code> using SRI.</p>
 
-  <button onclick="showMessage()">Click me</button>
+  <button>Click me</button>
   <p id="output"></p>
 
-  <!-- External script with integrity and crossorigin attributes -->
   <script src="https://7ragnarok7.github.io/SRI//main.js"
-          integrity="sha384-sfQ0ubVcIVeDQNxUCwKoZuD7qVry5BytmvIZRbiD0zZnqptjUiFHK20WKugwWE9V"
+          integrity="sha384-u7LSCMIve3Cbo/9xgNeqR6xpEDBepcliT69kR71xfheHL+14x9SaVfipQDSySz1I"
           crossorigin="anonymous"></script>
 </body>
 </html>
