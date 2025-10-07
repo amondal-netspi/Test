@@ -20,8 +20,8 @@
   </style>
 </head>
 <body>
-  <h2>Subresource Integrity (SRI) Example</h2>
-  <p>This page loads an external script from <code>example.com/main.js</code> using SRI.</p>
+  <h2>Cross-Domain Script Include Example</h2>
+  <p>This page loads an external script from <code>7ragnarok7.github.io/SRI//main.js</code> using SRI.</p>
 
   <button onclick="showMessage()">Click me</button>
   <p id="output"></p>
