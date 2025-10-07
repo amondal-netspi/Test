@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Unsafe SRI</title>
+
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://7ragnarok7.github.io; style-src 'self'; object-src 'none'; base-uri 'none';">
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h2>Cross-Domain Script Include Example</h2>
+  <p>This page loads an external script from <code>7ragnarok7.github.io/SRI//main.js</code> without using SRI.</p>
+
+  <button>Click me</button>
+  <p id="output"></p>
+
+  <script src="https://7ragnarok7.github.io/SRI//main.js"
+          crossorigin="anonymous"></script>
+</body>
+</html>
