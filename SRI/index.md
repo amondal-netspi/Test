@@ -1,6 +1,7 @@
 # Demonstration of how SRI works
-This is a small demo designed to show how SRI (Subresource Integrity) checks work and how they are related to Cross-Domain Script Includes
-Read about Subresource Integrity here [Subresource_Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity)
+This is a small demo designed to show how SRI (Subresource Integrity) checks work and how they are related to Cross-Domain Script Includes. 
+
+Read all about Subresource Integrity here: [Subresource_Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity)
 
 ### Example 1 - A web page includes a Cross-Domain JavaScript file (main.js) and verifies the integrity of the file with SRI:
 
